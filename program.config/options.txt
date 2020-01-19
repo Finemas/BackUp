@@ -1,0 +1,7 @@
+Helping for backuo program
+--init  "source path" *"destination path"    Create a repository for backup and make first full backup.
+--show                                       Print all initializated repositories.    
+--open  "repository path"                    Open the repository and print overview of all backups.
+  --diff  "backup id" "backup id"            Print difference between two backups.
+  --backup                                   Check if backup is current in case of not will make a backup.
+  --time  "backup path" "frequency"          Set time for automatic backup.

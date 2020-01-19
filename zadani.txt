@@ -1,0 +1,19 @@
+# Zálohovací program
+
+Nástroj provádějící inkrementální zálohování souborů s podporou návratu na předchozí verze souborů.
+
+Ovládá se pomocí přepínačů:
+
+    --init    "zdrojová cesta" *"cílová složka"         Připraví, popřípadě vytvoří, adresář pro zadanou zálohu a vytvoří kompletní zálohu.
+
+    --delete    "cesta repozitáře/id"                   Smaže daný repozitář.
+
+    --show                                              Vypíše všechny inicializované repozitáře.
+
+    --open    "cesta repozitáře/id"                     Otevře daný repozitář a vypíše přehled záloh.
+
+        --diff    "id 1.zálohy" "id 2.zálohy"           Zobrazí rozdíly mezi zálohami.
+
+        --backup                                        Projde poslední zálohu a zjistí jestli aktuální, pokud ne, tak udělá zálohu.
+
+        --time                                          Nastaví pravidelné zálohování pomocí cronu.
